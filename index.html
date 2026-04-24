@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Budget Grocery Optimizer</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>🛒 Budget Grocery Optimizer</h1>
+
+<div class="products">
+
+<div class="card">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCMtiA_3_cDW0CD46MkO13UqvzhBL2jD8lDA&s=10">
+<h3>Apple</h3>
+<p>₹100/Kg</p>
+<button onclick="addToCart('Apple',100)">Add</button>
+</div>
+
+<div class="card">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoScKLjQTrRgkLBR4ubmvyphFzuu4OhSamzw&">
+<h3>Banana</h3>
+<p>₹40/dozen</p>
+<button onclick="addToCart('Banana',40)">Add</button>
+</div>
+
+<div class="card">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRp2-wGkyyHymPzZyVJp0RCrZoq8CWR0dsAlg&s">
+<h3>Tomato</h3>
+<p>₹30/kg</p>
+<button onclick="addToCart('Tomato',30)">Add</button>
+</div>
+
+<div class="card">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXag7w6882rGpSJNz1kHQL54uxWWbgf79GTQ&s">
+<h3>Potato</h3>
+<p>₹25/kg</p>
+<button onclick="addToCart('Potato',25)">Add</button>
+</div>
+
+<div class="card">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfelbuMu2PAcoq0QelK850SXTW2yQmGYOpYQ&s">
+<h3>Onion</h3>
+<p>₹35/kg</p>
+<button onclick="addToCart('Onion',35)">Add</button>
+</div>
+
+<div class="card">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSph7KkV8WkmWuc6b4DDO-mVc6-Lx8eN-CTuQ&s">
+<h3>Milk</h3>
+<p>₹60/litr</p>
+<button onclick="addToCart('Milk',60)">Add</button>
+</div>
+
+<div class="card">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuQ6mrVHMBMisv6Hl-kOR5hNzsBaen1m2kSA&s">
+<h3>Bread</h3>
+<p>₹45/pkt</p>
+<button onclick="addToCart('Bread',45)">Add</button>
+</div>
+
+<div class="card">
+<img src="https://cdn.britannica.com/94/151894-050-F72A5317/Brown-eggs.jpg">
+<h3>Eggs</h3>
+<p>₹70/10 eggs</p>
+<button onclick="addToCart('Eggs',70)">Add</button>
+</div>
+
+<div class="card">
+<img src="https://img.freepik.com/free-photo/top-view-raw-rice-inside-plate-dark-desk_179666-27235.jpg?semt=ais_hybrid&w=740&q=80">
+<h3>Rice</h3>
+<p>₹80/kg</p>
+<button onclick="addToCart('Rice',80)">Add</button>
+</div>
+
+<div class="card">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGm-5BgtetBAAxSbmsU7XlCcjLaOIPsT64-Q&s">
+<h3>Oil</h3>
+<p>₹150/litr</p>
+<button onclick="addToCart('Oil',150)">Add</button>
+</div>
+
+<div class="card">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3tutDROonn0Yf0BOw_K9iRLudp739P7BMVg&s">
+<h3>bean</h3>
+<p>₹100/Kg</p>
+<button onclick="addToCart('bean',100)">Add</button>
+</div>
+
+<div class="card">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTputk7Y7nqZQruNqMg-Nvu6irgOBKfTe_QNA&s">
+<h3>Carrot</h3>
+<p>₹50/Kg</p>
+<button onclick="addToCart('Carrot',50)">Add</button>
+</div>
+
+<div class="card">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSviTOW8Si4rzlD-SXL5QYo8HtxsKi2bwXFAw&s">
+<h3>Spinach</h3>
+<p>₹20/Kg</p>
+<button onclick="addToCart('Spinach',20)">Add</button>
+</div>
+
+<div class="card">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNkN27AxzYEPzeS5L_WpNUTolnwVqS0HukPg&s">
+<h3>Cheese</h3>
+<p>₹200/Kg</p>
+<button onclick="addToCart('Cheese',200)">Add</button>
+</div>
+
+<div class="card">
+<img src="https://www.shutterstock.com/image-photo/plain-curd-yogurt-dahi-traditional-260nw-2546687863.jpg">
+<h3>curd</h3>  
+<p>₹80/Kg</p>
+<button onclick="addToCart('curd',80)">Add</button>
+</div>
+</div>
+
+<hr>
+
+<h2>🧾 Cart</h2>
+<ul id="cart"></ul>
+
+<h2>Total: ₹<span id="total">0</span></h2>
+
+<!-- JS FILE LINK (IMPORTANT) -->
+<script src="script.js"></script>
+
+</body>
+</html>
